@@ -9,7 +9,8 @@
   },
   "devDependencies": {
     "typescript": "^5.8.3",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "@blankeos/vike-routegen": "^0.0.2"
   },
   "type": "module"
 }

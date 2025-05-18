@@ -3,11 +3,13 @@
 /// <reference types="@batijs/core/types" />
 import { defineConfig } from "vite";
 import vike from "vike/plugin";
+import vikeRoutegen from "@blankeos/vike-routegen";
 import { hattip } from "@hattip/vite";
 
 export default defineConfig({
   plugins: [
     vike(),
+    vikeRoutegen(),
     //# BATI.has("hattip") && BATI.has("vercel")
     process.env.NODE_ENV !== "production" ? hattip() : undefined,
     //# BATI.has("hattip") && !BATI.has("vercel")
